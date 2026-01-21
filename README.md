@@ -2,15 +2,27 @@
 
 ## Overview
 
-This repository contains the anonymized research artifact accompanying a paper submission currently under double-blind review.
+This repository contains an **anonymized research artifact** accompanying a paper submission currently under **double-blind review**.
 
-The artifact includes the source code of a web-based annotation system developed to support an empirical study on language and communication in workplace contexts.
+The artifact provides the source code of a **web-based annotation system** developed to support an empirical study on language and communication in workplace-related contexts.
 
-All identifying information has been removed to preserve anonymity.
+All identifying information (e.g., author names, institutions, project identifiers, credentials) has been removed to preserve anonymity.
 
 ---
 
-## Artifact Contents
+## Artifact Scope
+
+This artifact is intended to demonstrate:
+
+- System architecture and implementation structure
+- Front-end interaction design
+- Annotation workflow and interface logic
+
+The artifact is **not intended as a production-ready deployment** and does not include live backend services or participant data.
+
+---
+
+## Repository Structure
 
 This repository includes:
 
@@ -18,12 +30,14 @@ This repository includes:
 - `public/` – Static assets
 - `package.json` / `package-lock.json` – Dependency specifications
 - `vite.config.js` – Build configuration
+- `README.md` – Artifact documentation
 
-The artifact does **not** include:
+The artifact **does not include**:
 
-- Participant data
-- Study annotations or transcripts
-- Private credentials or API keys
+- Participant data or study annotations
+- Interview transcripts or user-generated content
+- Private credentials, API keys, or service tokens
+- Institutional servers or cloud resources
 
 ---
 
@@ -44,3 +58,17 @@ The artifact does **not** include:
 ```bash
 npm install
 ```
+
+---
+
+## External Services & Configuration
+
+This system originally relied on external backend services (e.g., authentication, database, file storage).
+
+To preserve anonymity and protect sensitive information, all backend configurations have been removed from this artifact.
+
+The file `src/firebase.js` contains placeholder configuration only.  
+No Firebase project, credentials, or live services are connected by default.
+
+Researchers who wish to fully deploy the system may connect the front-end to their own backend services (e.g., Firebase or custom servers).  
+A backend connection is **not required** to evaluate this artifact.
